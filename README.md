@@ -105,10 +105,11 @@ Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que
    relação à semana anterior;
 3. Das 91 instâncias de testadas, preve se uma probabilidade de 31.86% de chances dos números de testes reduzirem em
    relação à semana anterior; e
-4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da
-   probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do
-   modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade
-   do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
+4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja:
+   4.1 há 2.19% de probabilidade do modelo **errar dizendo que haverá _aumento_ no número de testes** ao no lugar de
+   dizer que estes manterão; 4.2 há 4.39% de probabilidade do modelo **errar dizendo que haverá _decréscimo_ no número
+   de testes** ao no lugar de dizer que estes aumentarão; 4.3 há 12.08% de probabilidade do modelo **errar dizendo que
+   haverá _aumento_ no número de testes** ao no lugar de dizer que estes decrescerão;
 
 # Death Status
 
@@ -151,9 +152,11 @@ Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que
 3. Das 91 instâncias de testadas, preve se uma probabilidade de 23.07% de chances dos números de mortos reduzirem em
    relação à semana anterior; e
 4. A restante percentagem (27.47%) corresponde a probabilidade total de erro das chances totais. Ou seja:
-   4.1 há 3.29% e 4.39% de probabilidade do modelo **errar respectivamente dizendo que haverá _aumento_ e _decréscimo_ no número de mortos** ao no lugar de dizer que estes manterão;
-   4.2 há 1.09% e 5.49% da probabilidade do modelo **errar respectivamente dizendo que haverá _permanência_ e _decréscimo_ no número de mortos** ao no lugar de dizer que estes aumentarão; e
-   4.3 há 0% e 13.18% da probabilidade do modelo **errar respectivamente dizendo que haverá _permanência_ e _aumento_ no número de mortos** ao no lugar de dizer que estes decrescerão.
+   4.1 há 3.29% e 4.39% de probabilidade do modelo **errar respectivamente dizendo que haverá _aumento_ e _decréscimo_
+   no número de mortos** ao no lugar de dizer que estes manterão; 4.2 há 1.09% e 5.49% da probabilidade do modelo **
+   errar respectivamente dizendo que haverá _permanência_ e _decréscimo_ no número de mortos** ao no lugar de dizer que
+   estes aumentarão; e 4.3 há 0% e 13.18% da probabilidade do modelo **errar respectivamente dizendo que haverá _
+   permanência_ e _aumento_ no número de mortos** ao no lugar de dizer que estes decrescerão.
 
 # Case Status
 
@@ -187,13 +190,14 @@ Time taken to test model on test split: 0.01 seconds
 
 Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
 
-1. Das 91 instâncias de testadas, preve se uma probabilidade de 39.56% de chances dos números de testes aumentar em
-   relação à semana anterior;
-2. Das 91 instâncias de testadas, preve se uma probabilidade de 45.05% de chances dos números de testes reduzirem em
-   relação à semana anterior; e
+1. Das 91 instâncias de testadas, preve se uma probabilidade de 39.56% de chances dos números aumentarem em relação à
+   semana anterior;
+2. Das 91 instâncias de testadas, preve se uma probabilidade de 45.05% de chances dos números reduzirem em relação à
+   semana anterior; e
 3. A restante percentagem (15.39%) corresponde a probabilidade total de erro das chances totais. Ou seja:
-   3.1 há 5.49% de probabilidade do modelo **errar dizendo que haverá _aumento_ dos números** no lugar de dizer que estes reduzirão;
-   3.2 há 9.89% de probabilidade do modelo **errar dizendo que haverá _redução_ dos números** no lugar de dizer que estes aumentarão;
+   3.1 há 5.49% de probabilidade do modelo **errar dizendo que haverá _aumento_ dos números** no lugar de dizer que
+   estes reduzirão; 3.2 há 9.89% de probabilidade do modelo **errar dizendo que haverá _redução_ dos números** no lugar
+   de dizer que estes aumentarão;
 
 # Informações do Ambiente usado:
 
