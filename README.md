@@ -123,25 +123,25 @@ Time taken to test model on test split: 0.01 seconds
                      0.636    0.155    0.700      0.636    0.667      0.492    0.867     0.710     DECREASE
     Weighted Avg.    0.725    0.150    0.748      0.725    0.728      0.590    0.874     0.758
 
-### === Confusion Matrix ===
+###=== Confusion Matrix ===
 
         MAINTAIN  INCREASE  DECREASE   +
         19         3         4         |  MAINTAIN
         1         26         5         |   INCREASE
         0         12         21        |  DECREASE
 Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
-1. Das 91 instâncias de testadas, preve se uma probabilidade de 0% de chances dos números de testes se manterem iguais ao da semana anterior;
-2. Das 91 instâncias de testadas, preve se uma probabilidade de 49.45% de chances dos números de testes aumentar em relação à semana anterior;
-3. Das 91 instâncias de testadas, preve se uma probabilidade de 31.86% de chances dos números de testes reduzirem em relação à semana anterior; e
-4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
+1. Das 91 instâncias de testadas, preve se uma probabilidade de 20.87% de chances dos números de testes se manterem iguais ao da semana anterior;
+2. Das 91 instâncias de testadas, preve se uma probabilidade de 28.57% de chances dos números de testes aumentar em relação à semana anterior;
+3. Das 91 instâncias de testadas, preve se uma probabilidade de 23.07% de chances dos números de testes reduzirem em relação à semana anterior; e
+4. A restante percentagem (27.47%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
 
 # Case Status
 
-### === Evaluation on test split ===
+###=== Evaluation on test split ===
 
 Time taken to test model on test split: 0.01 seconds
 
-### === Summary ===
+###=== Summary ===
 
     Correctly Classified Instances          77               84.6154 %
     Incorrectly Classified Instances        14               15.3846 %
@@ -152,14 +152,14 @@ Time taken to test model on test split: 0.01 seconds
     Root relative squared error             63.2074 %
     Total Number of Instances               91
 
-### === Detailed Accuracy By Class ===
+###=== Detailed Accuracy By Class ===
 
                      TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
                      0.800    0.109    0.878      0.800    0.837      0.695    0.948     0.945     INCREASE
                      0.891    0.200    0.820      0.891    0.854      0.695    0.948     0.944     DECREASE
     Weighted Avg.    0.846    0.155    0.849      0.846    0.846      0.695    0.948     0.945
 
-### === Confusion Matrix ===
+###=== Confusion Matrix ===
 
         INCREASE  DECREASE  +
         36        9         | INCREASE
