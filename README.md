@@ -13,15 +13,19 @@ imagem 2
 
 para a obteção dos modelos que respondem à:
 
-1. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação dos teste (test_status) se tem?
-2. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação das mortes (death_status) se tem?
-3. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação dos casos (case_status) se tem?
+1. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação dos
+   teste (test_status) se tem?
+2. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação das
+   mortes (death_status) se tem?
+3. Para o dia "date", com o tipo de dia ("day_situation"  e "restrictions") que Classificação e predição da situação dos
+   casos (case_status) se tem?
 
 nestes termos, gerou os medelos com as condições abaixo:
 
-#Modelos Gerados
+# Modelos Gerados
 
-##Informação geral
+## Informação geral
+
 === Run information ===
 
     Scheme:       weka.classifiers.lazy.IBk -K 19 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
@@ -92,11 +96,19 @@ Com este modelo se obteve cerca de 81.32% de acertos num total de 91 instâncias
         0         2         0          | MAINTAIN
         0         45        4          | INCREASE
         0         11        29         | DECREASE
+
 Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
- 1. Das 91 instâncias de testadas, preve se uma probabilidade de 0% de chances dos números de testes se manterem iguais ao da semana anterior;
- 2. Das 91 instâncias de testadas, preve se uma probabilidade de 49.45% de chances dos números de testes aumentar em relação à semana anterior;
- 3. Das 91 instâncias de testadas, preve se uma probabilidade de 31.86% de chances dos números de testes reduzirem em relação à semana anterior; e
- 4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
+
+1. Das 91 instâncias de testadas, preve se uma probabilidade de 0% de chances dos números de testes se manterem iguais
+   ao da semana anterior;
+2. Das 91 instâncias de testadas, preve se uma probabilidade de 49.45% de chances dos números de testes aumentar em
+   relação à semana anterior;
+3. Das 91 instâncias de testadas, preve se uma probabilidade de 31.86% de chances dos números de testes reduzirem em
+   relação à semana anterior; e
+4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da
+   probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do
+   modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade
+   do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
 
 # Death Status
 
@@ -123,25 +135,33 @@ Time taken to test model on test split: 0.01 seconds
                      0.636    0.155    0.700      0.636    0.667      0.492    0.867     0.710     DECREASE
     Weighted Avg.    0.725    0.150    0.748      0.725    0.728      0.590    0.874     0.758
 
-###=== Confusion Matrix ===
+### === Confusion Matrix ===
 
         MAINTAIN  INCREASE  DECREASE   +
         19         3         4         |  MAINTAIN
-        1         26         5         |   INCREASE
+        1         26         5         |  INCREASE
         0         12         21        |  DECREASE
+
 Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
-1. Das 91 instâncias de testadas, preve se uma probabilidade de 20.87% de chances dos números de testes se manterem iguais ao da semana anterior;
-2. Das 91 instâncias de testadas, preve se uma probabilidade de 28.57% de chances dos números de testes aumentar em relação à semana anterior;
-3. Das 91 instâncias de testadas, preve se uma probabilidade de 23.07% de chances dos números de testes reduzirem em relação à semana anterior; e
-4. A restante percentagem (27.47%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
+
+1. Das 91 instâncias de testadas, preve se uma probabilidade de 20.87% de chances dos números de mortos se manterem
+   iguais ao da semana anterior;
+2. Das 91 instâncias de testadas, preve se uma probabilidade de 28.57% de chances dos números de mortos aumentar em
+   relação à semana anterior;
+3. Das 91 instâncias de testadas, preve se uma probabilidade de 23.07% de chances dos números de mortos reduzirem em
+   relação à semana anterior; e
+4. A restante percentagem (27.47%) corresponde a probabilidade total de erro das chances totais. Ou seja:
+   4.1 há 3.29% e 4.39% de probabilidade do modelo **errar respectivamente dizendo que haverá _aumento_ e _decréscimo_ no número de mortos** ao no lugar de dizer que estes manterão;
+   4.2 há 1.09% e 5.49% da probabilidade do modelo **errar respectivamente dizendo que haverá _permanência_ e _decréscimo_ no número de mortos** ao no lugar de dizer que estes aumentarão; e
+   4.3 há 0% e 13.18% da probabilidade do modelo **errar respectivamente dizendo que haverá _permanência_ e _aumento_ no número de mortos** ao no lugar de dizer que estes decrescerão.
 
 # Case Status
 
-###=== Evaluation on test split ===
+### === Evaluation on test split ===
 
 Time taken to test model on test split: 0.01 seconds
 
-###=== Summary ===
+### === Summary ===
 
     Correctly Classified Instances          77               84.6154 %
     Incorrectly Classified Instances        14               15.3846 %
@@ -152,24 +172,31 @@ Time taken to test model on test split: 0.01 seconds
     Root relative squared error             63.2074 %
     Total Number of Instances               91
 
-###=== Detailed Accuracy By Class ===
+### === Detailed Accuracy By Class ===
 
                      TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
                      0.800    0.109    0.878      0.800    0.837      0.695    0.948     0.945     INCREASE
                      0.891    0.200    0.820      0.891    0.854      0.695    0.948     0.944     DECREASE
     Weighted Avg.    0.846    0.155    0.849      0.846    0.846      0.695    0.948     0.945
 
-###=== Confusion Matrix ===
+### === Confusion Matrix ===
 
         INCREASE  DECREASE  +
         36        9         | INCREASE
         5         41        | DECREASE
-Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
-1. Das 91 instâncias de testadas, preve se uma probabilidade de 39.56% de chances dos números de testes aumentar em relação à semana anterior;
-2. Das 91 instâncias de testadas, preve se uma probabilidade de 45.05% de chances dos números de testes reduzirem em relação à semana anterior; e
-3. A restante percentagem (15.39%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 5.49% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão reduzir e 9.89% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar.
 
-#Informações do Ambiente usado:
+Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
+
+1. Das 91 instâncias de testadas, preve se uma probabilidade de 39.56% de chances dos números de testes aumentar em
+   relação à semana anterior;
+2. Das 91 instâncias de testadas, preve se uma probabilidade de 45.05% de chances dos números de testes reduzirem em
+   relação à semana anterior; e
+3. A restante percentagem (15.39%) corresponde a probabilidade total de erro das chances totais. Ou seja:
+   3.1 há 5.49% de probabilidade do modelo **errar dizendo que haverá _aumento_ dos números** no lugar de dizer que estes reduzirão;
+   3.2 há 9.89% de probabilidade do modelo **errar dizendo que haverá _redução_ dos números** no lugar de dizer que estes aumentarão;
+
+# Informações do Ambiente usado:
+
     KEY                                 VALUE
     WEKA_HOME                           /home/carlos-matlule/wekafiles
     awt.toolkit                         Sun.awt.X11.XToolkit
