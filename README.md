@@ -76,6 +76,8 @@ Time taken to test model on test split: 0.01 seconds
     Root relative squared error             68.2417 %
     Total Number of Instances               91
 
+Com este modelo se obteve cerca de 81.32% de acertos num total de 91 instâncias de testadas.
+
 ### === Detailed Accuracy By Class ===
 
                      TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
@@ -90,6 +92,11 @@ Time taken to test model on test split: 0.01 seconds
         0         2         0          | MAINTAIN
         0         45        4          | INCREASE
         0         11        29         | DECREASE
+Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que:
+ 1. Das 91 instâncias de testadas, preve se uma probabilidade de 0% de chances dos números de testes se manterem iguais ao da semana anterior;
+ 2. Das 91 instâncias de testadas, preve se uma probabilidade de 49.45% de chances dos números de testes aumentar em relação à semana anterior;
+ 3. Das 91 instâncias de testadas, preve se uma probabilidade de 31.86% de chances dos números de testes reduzirem em relação à semana anterior; e
+ 4. A restante percentagem (18.69%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 2.19% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão manter, 4.39% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar e 12.08% da probabilidade do modelo errar ao dizer os que os números vão aumentar ao no lugar de dizer que vão decrescer.
 
 # Death Status
 
@@ -153,7 +160,7 @@ Time taken to test model on test split: 0.01 seconds
         36        9         | INCREASE
         5         41        | DECREASE
 
-#Informações do Sistema:
+#Informações do Ambiente usado:
     WEKA_HOME	/home/carlos-matlule/wekafiles
     awt.toolkit	sun.awt.X11.XToolkit
     file.encoding	UTF-8
@@ -187,7 +194,6 @@ Time taken to test model on test split: 0.01 seconds
     jdk.debug	release
     jdk.vendor.version	Zulu11.43+55-CA
     line.separator
-    
     memory.initial	250MB (262144000)
     memory.max	3978MB (4171235328)
     os.arch	amd64
