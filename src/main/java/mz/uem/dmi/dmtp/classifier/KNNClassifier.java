@@ -221,6 +221,14 @@ import weka.core.Instances;
 public class KNNClassifier {
     private static Classifier classifier = null;
 
+    /**
+     * Método responsável pela predição de resultados de uma instância.
+     *
+     * @param modelFilename o nome do ficheiro modelo (o modelo de classificação/predição gerado pelo weka)
+     * @param instance      a instância a ser classificada/predita
+     * @return
+     * @throws Exception Qualquer tipo de erro
+     */
     public static double predictInstance(final String modelFilename, Instance instance) throws Exception {
         if (classifier == null)
             classifier = (IBk) weka.core.SerializationHelper.read(modelFilename);
@@ -233,6 +241,13 @@ public class KNNClassifier {
         return classifier.classifyInstance(instance);
     }
 
+    /**
+     * Método responsável por retornar o índice da coluna.
+     *
+     * @param instances     o conjunto de instâncias contendo a coluna
+     * @param attributeName o nome da coluna por obter o índice
+     * @return
+     */
     public static int getAttributeIndex(final Instances instances, final String attributeName) {
         return instances.attribute(attributeName).index();
     }

@@ -241,11 +241,16 @@ public class DatasetConverter {
         saver.writeBatch();
     }
 
-    public static boolean createOutputDirector() {
+    /**
+     * Método responsável pela criação do directório "converted" onde será salvo os ficheiros convertidos.
+     *
+     * @return true - se o directório existir ou tiver sido criado, false caso contrario.
+     */
+    private static boolean createOutputDirector() {
         File file = new File(OUTPUT_DIRECTOR);
         if (!file.isDirectory())
             return file.mkdir();
-        return false;
+        return true;
     }
 
 }
