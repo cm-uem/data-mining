@@ -170,64 +170,65 @@ Com este modelo se obteve a matriz de confusão acima, da qual se pode notar que
 3. A restante percentagem (15.39%) corresponde a probabilidade total de erro das chances totais. Ou seja, há 5.49% da probabilidade do modelo errar ao dizer os aumentar ao no lugar de dizer que vão reduzir e 9.89% da probabilidade do modelo errar ao dizer os que os números vão reduzir ao no lugar de dizer que vão aumentar.
 
 #Informações do Ambiente usado:
-    WEKA_HOME	/home/carlos-matlule/wekafiles
-    awt.toolkit	sun.awt.X11.XToolkit
-    file.encoding	UTF-8
-    file.separator	/
-    java.awt.graphicsenv	sun.awt.X11GraphicsEnvironment
-    java.awt.printerjob	sun.print.PSPrinterJob
-    java.class.path	/opt/weka-3-8-5/weka.jar
-    java.class.version	55.0
-    java.home	/opt/weka-3-8-5/jre/zulu11.43.55-ca-fx-jre11.0.9.1-linux_x64
-    java.io.tmpdir	/tmp
-    java.library.path	/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:/home/carlos-matlule/wekafiles/native
-    java.runtime.name	OpenJDK Runtime Environment
-    java.runtime.version	11.0.9.1+1-LTS
-    java.specification.name	Java Platform API Specification
-    java.specification.vendor	Oracle Corporation
-    java.specification.version	11
-    java.vendor	Azul Systems, Inc.
-    java.vendor.url	http://www.azulsystems.com/
-    java.vendor.url.bug	http://www.azulsystems.com/support/
-    java.vendor.version	Zulu11.43+55-CA
-    java.version	11.0.9.1
-    java.version.date	2020-11-04
-    java.vm.compressedOopsMode	Zero based
-    java.vm.info	mixed mode
-    java.vm.name	OpenJDK 64-Bit Server VM
-    java.vm.specification.name	Java Virtual Machine Specification
-    java.vm.specification.vendor	Oracle Corporation
-    java.vm.specification.version	11
-    java.vm.vendor	Azul Systems, Inc.
-    java.vm.version	11.0.9.1+1-LTS
-    jdk.debug	release
-    jdk.vendor.version	Zulu11.43+55-CA
+    KEY                                 VALUE
+    WEKA_HOME                           /home/carlos-matlule/wekafiles
+    awt.toolkit                         Sun.awt.X11.XToolkit
+    file.encoding                       UTF-8
+    file.separator                  	/
+    java.awt.graphicsenv            	sun.awt.X11GraphicsEnvironment
+    java.awt.printerjob             	sun.print.PSPrinterJob
+    java.class.path                 	/opt/weka-3-8-5/weka.jar
+    java.class.version                  55.0
+    java.home                       	/opt/weka-3-8-5/jre/zulu11.43.55-ca-fx-jre11.0.9.1-linux_x64
+    java.io.tmpdir                  	/tmp
+    java.library.path               	/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib:/home/carlos-matlule/wekafiles/native
+    java.runtime.name               	OpenJDK Runtime Environment
+    java.runtime.version            	11.0.9.1+1-LTS
+    java.specification.name         	Java Platform API Specification
+    java.specification.vendor	        Oracle Corporation
+    java.specification.version      	11
+    java.vendor                     	Azul Systems, Inc.
+    java.vendor.url                 	http://www.azulsystems.com/
+    java.vendor.url.bug             	http://www.azulsystems.com/support/
+    java.vendor.version             	Zulu11.43+55-CA
+    java.version	                    11.0.9.1
+    java.version.date	                2020-11-04
+    java.vm.compressedOopsMode      	Zero based
+    java.vm.info	                    mixed mode
+    java.vm.name	                    OpenJDK 64-Bit Server VM
+    java.vm.specification.name      	Java Virtual Machine Specification
+    java.vm.specification.vendoR     	Oracle Corporation
+    java.vm.specification.version   	11
+    java.vm.vendor                  	Azul Systems, Inc.
+    java.vm.version                     11.0.9.1+1-LTS
+    jdk.debug	                        release
+    jdk.vendor.version              	Zulu11.43+55-CA
     line.separator
-    memory.initial	250MB (262144000)
-    memory.max	3978MB (4171235328)
-    os.arch	amd64
-    os.name	Linux
-    os.version	5.8.0-59-generic
-    path.separator	:
-    sun.arch.data.model	64
-    sun.awt.enableExtraMouseButtons	true
-    sun.boot.library.path	/opt/weka-3-8-5/jre/zulu11.43.55-ca-fx-jre11.0.9.1-linux_x64/lib
-    sun.cpu.endian	little
+    memory.initial                  	250MB (262144000)
+    memory.max	                        3978MB (4171235328)
+    os.arch	                            amd64
+    os.name	                            Linux
+    os.version	                        5.8.0-59-generic
+    path.separator	                    :
+    sun.arch.data.model             	64
+    sun.awt.enableExtraMouseButtons	    true
+    sun.boot.library.path	            /opt/weka-3-8-5/jre/zulu11.43.55-ca-fx-jre11.0.9.1-linux_x64/lib
+    sun.cpu.endian	                    little
     sun.cpu.isalist
-    sun.desktop	gnome
-    sun.font.fontmanager	sun.awt.X11FontManager
-    sun.io.unicode.encoding	UnicodeLittle
-    sun.java.command	weka.gui.GUIChooser
-    sun.java.launcher	SUN_STANDARD
-    sun.jnu.encoding	UTF-8
-    sun.management.compiler	HotSpot 64-Bit Tiered Compilers
-    sun.os.patch.level	unknown
-    ui.currentLookAndFeel	com.sun.java.swing.plaf.gtk.GTKLookAndFeel
-    ui.installedLookAndFeels	javax.swing.plaf.metal.MetalLookAndFeel,javax.swing.plaf.nimbus.NimbusLookAndFeel,com.sun.java.swing.plaf.motif.MotifLookAndFeel,com.sun.java.swing.plaf.gtk.GTKLookAndFeel
-    user.country	US
-    user.dir	/opt/weka-3-8-5
-    user.home	/home/carlos-matlule
-    user.language	en
-    user.name	carlos-matlule
-    user.timezone	Africa/Maputo
-    weka.version	3.8.5
+    sun.desktop                     	gnome
+    sun.font.fontmanager            	sun.awt.X11FontManager
+    sun.io.unicode.encoding         	UnicodeLittle
+    sun.java.command	                weka.gui.GUIChooser
+    sun.java.launcher	                SUN_STANDARD
+    sun.jnu.encoding	                UTF-8
+    sun.management.compiler         	HotSpot 64-Bit Tiered Compilers
+    sun.os.patch.level	                unknown
+    ui.currentLookAndFeel	            com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+    ui.installedLookAndFeels            javax.swing.plaf.metal.MetalLookAndFeel,javax.swing.plaf.nimbus.NimbusLookAndFeel,com.sun.java.swing.plaf.motif.MotifLookAndFeel,com.sun.java.swing.plaf.gtk.GTKLookAndFeel
+    user.country                        US
+    user.dir                        	/opt/weka-3-8-5
+    user.home	                        /home/carlos-matlule
+    user.language                       en
+    user.name                       	carlos-matlule
+    user.timezone                   	Africa/Maputo
+    weka.version                    	3.8.5
